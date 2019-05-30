@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+  
+    <servlet>
+  	<servlet-name>findReaction</servlet-name>
+  	<servlet-class>ser.FIND_Reaction</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  		<servlet-name>findReaction</servlet-name>
+  		<url-pattern>/jsp/goTime</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>findAddress</servlet-name>
+  	<servlet-class>ser.FIND_Address</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  		<servlet-name>findAddress</servlet-name>
+  		<url-pattern>/jsp/goAddress</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>find</servlet-name>
+  	<servlet-class>ser.FIND</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  		<servlet-name>find</servlet-name>
+  		<url-pattern>/jsp/go</url-pattern>
+  </servlet-mapping>
+  	
+  	<servlet-mapping>
+ 	<servlet-name>default</servlet-name>
+ 	<url-pattern>*.css</url-pattern>
+ 	<url-pattern>*.js</url-pattern>
+ 	<url-pattern>*.png</url-pattern>
+ 	<url-pattern>*.gif</url-pattern>
+ 	<url-pattern>*.jpg</url-pattern>	
+</servlet-mapping>
+</web-app>
